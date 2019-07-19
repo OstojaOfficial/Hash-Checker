@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hash Checker", "Hash Checker\Hash Checker.csproj", "{E5F85A9C-DD02-424B-B6BD-5C65EE35679D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E5F85A9C-DD02-424B-B6BD-5C65EE35679D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F85A9C-DD02-424B-B6BD-5C65EE35679D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F85A9C-DD02-424B-B6BD-5C65EE35679D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F85A9C-DD02-424B-B6BD-5C65EE35679D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {596C2623-2959-4E56-8463-80A77563CCB5}
+	EndGlobalSection
+EndGlobal

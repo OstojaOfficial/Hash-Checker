@@ -1,0 +1,15 @@
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\bin\Debug\Hash Checker.exe.config
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\bin\Debug\Hash Checker.exe
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\bin\Debug\Hash Checker.pdb
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.csprojAssemblyReference.cache
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash_Checker.Properties.Resources.resources
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.csproj.GenerateResource.cache
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.csproj.CoreCompileInputs.cache
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.exe
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.pdb
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash_Checker.Form1.resources
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\bin\Debug\Hash Checker.exe.manifest
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\bin\Debug\Hash Checker.application
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.TrustInfo.xml
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.exe.manifest
+C:\Users\ostoj\source\repos\Hash Checker\Hash Checker\obj\Debug\Hash Checker.application
