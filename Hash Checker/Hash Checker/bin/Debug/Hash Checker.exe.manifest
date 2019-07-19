@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hash Checker.exe" size="13272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hash Checker.exe" size="14808">
       <assemblyIdentity name="Hash Checker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nSdve987f0U2QGilPL962EiW9Bq7WxxdezQo869YWv0=</dsig:DigestValue>
+        <dsig:DigestValue>mi5a87kItsGFrM0fPikY3ZPnMhZTe0n/0GjQCOPjR0E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

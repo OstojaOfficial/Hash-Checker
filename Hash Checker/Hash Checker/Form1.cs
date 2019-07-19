@@ -43,20 +43,27 @@ namespace Hash_Checker
 
         private void Hash_Click(object sender, EventArgs e)
         {
-            textMD5.Text = BytesToString(GetHashMD5(txtloc.Text));
-            textSHA512.Text = BytesToString(GetHashSha1(txtloc.Text));
-            textSHA256.Text = BytesToString(GetHashSha256(txtloc.Text));
-            textSHA1.Text = BytesToString(GetHashSha1(txtloc.Text));
+            if (File.Exists(txtloc.Text))
+            {
+                textMD5.Text = BytesToString(GetHashMD5(txtloc.Text));
+                textSHA512.Text = BytesToString(GetHashSha1(txtloc.Text));
+                textSHA256.Text = BytesToString(GetHashSha256(txtloc.Text));
+                textSHA1.Text = BytesToString(GetHashSha1(txtloc.Text));
+            }
+            else
+            {
+                MessageBox.Show("File doesn't exist.", "Error: File not found");
+            }
 
             if (texthash.Text == textSHA256.Text || texthash.Text == textSHA1.Text || texthash.Text == textMD5.Text || texthash.Text == textSHA512.Text)
             {
                 match.ForeColor = System.Drawing.Color.Green;
-                match.Text = "Match";
+                match.Text = "MATCH";
             }
             else
             {
                 match.ForeColor = System.Drawing.Color.Red;
-                match.Text = "No match";
+                match.Text = "NO MATCH";
             }
         }
 
@@ -67,6 +74,7 @@ namespace Hash_Checker
             return result;
         }
 
+        #region Algorithms
         //MD5
         private MD5 Md5 = MD5.Create();
 
@@ -110,5 +118,57 @@ namespace Hash_Checker
                 return Sha512.ComputeHash(stream);
             }
         }
+        #endregion
+
+        #region Copy
+        //Copy
+        private void Copy1_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textMD5.Text))
+            {
+                MessageBox.Show("Textbox cannot be null.", "Error: MD5");
+            }
+            else
+            {
+                Clipboard.SetText(textMD5.Text);
+            }
+        }
+
+        private void Copy2_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textSHA1.Text))
+            {
+                MessageBox.Show("Textbox cannot be null.", "Error: SHA1");
+            }
+            else
+            {
+                Clipboard.SetText(textSHA1.Text);
+            }
+        }
+
+        private void Copy3_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textSHA256.Text))
+            {
+                MessageBox.Show("Textbox cannot be null.", "Error: SHA256");
+            }
+            else
+            {
+                Clipboard.SetText(textSHA256.Text);
+            }
+        }
+
+        private void Copy4_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrEmpty(textSHA512.Text))
+            {
+                MessageBox.Show("Textbox cannot be null.", "Error: SHA512");
+            }
+            else
+            {
+                Clipboard.SetText(textSHA512.Text);
+            }
+        }
+        #endregion
     }
 }
