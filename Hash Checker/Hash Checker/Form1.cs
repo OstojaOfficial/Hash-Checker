@@ -70,13 +70,16 @@ namespace Hash_Checker
         public static string BytesToString(byte[] bytes)
         {
             string result = "";
-            foreach (byte b in bytes) result += b.ToString("x2");
+            foreach (byte b in bytes)
+            {
+                result += b.ToString("x2");
+            }
             return result;
         }
 
         #region Algorithms
         //MD5
-        private MD5 Md5 = MD5.Create();
+        readonly private MD5 Md5 = MD5.Create();
 
         private byte[] GetHashMD5(string filename)
         {
@@ -87,7 +90,7 @@ namespace Hash_Checker
         }
 
         //SHA256
-        private SHA256 Sha256 = SHA256.Create();
+        readonly private SHA256 Sha256 = SHA256.Create();
 
         private byte[] GetHashSha256(string filename)
         {
@@ -98,7 +101,7 @@ namespace Hash_Checker
         }
 
         //SHA1
-        private SHA1 Sha1 = SHA1.Create();
+        readonly private SHA1 Sha1 = SHA1.Create();
 
         private byte[] GetHashSha1(string filename)
         {
@@ -109,7 +112,7 @@ namespace Hash_Checker
         }
 
         //SHA512
-        private SHA256 Sha512 = SHA256.Create();
+        readonly private SHA256 Sha512 = SHA256.Create();
 
         private byte[] GetHashSha512(string filename)
         {
