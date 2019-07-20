@@ -170,9 +170,9 @@
             this.match.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.match.Location = new System.Drawing.Point(10, 198);
             this.match.Name = "match";
-            this.match.Size = new System.Drawing.Size(191, 25);
+            this.match.Size = new System.Drawing.Size(76, 25);
             this.match.TabIndex = 12;
-            this.match.Text = "AWAITING HASH";
+            this.match.Text = "NONE";
             // 
             // label6
             // 
