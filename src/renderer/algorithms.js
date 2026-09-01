@@ -5,7 +5,6 @@ const algorithms = [
   { name: 'SHA-512',     id: 'sha512',     hexLength: 128 },
   { name: 'SHA-1',       id: 'sha1',       hexLength: 40  },
   { name: 'MD5',         id: 'md5',        hexLength: 32  },
-  { name: 'SHA3-256',    id: 'sha3-256',   hexLength: 64  },
 ];
 
 function normalizeHash(text) {
