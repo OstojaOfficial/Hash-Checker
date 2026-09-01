@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'">
+  <title>Hash Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="tabs">
+    <button class="tab is-active" data-panel="checksum">Checksum</button>
+    <button class="tab" data-panel="compare">Compare</button>
+  </nav>
+
+  <section class="panel is-active" id="panel-checksum">
+    <div class="field">
+      <label for="single-path">File</label>
+      <div class="picker" id="single-picker">
+        <input type="text" id="single-path" placeholder="Choose a file, or drag one here">
+        <button class="secondary">Browse…</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="single-algorithm">Algorithm</label>
+      <select id="single-algorithm"></select>
+    </div>
+
+    <div class="field">
+      <label for="single-result">Checksum</label>
+      <div class="picker">
+        <input type="text" id="single-result" class="mono" readonly
+               placeholder="The checksum will appear here">
+        <button class="secondary" id="single-copy" disabled>Copy</button>
+      </div>
+    </div>
+
+    <button class="primary" id="single-action">Compute</button>
+    <progress id="single-progress" max="100" value="0" hidden></progress>
+    <p class="status" id="single-status"></p>
+  </section>
+
+  <section class="panel" id="panel-compare">
+    <div class="field">
+      <span class="label">Compare</span>
+      <div class="modes">
+        <label><input type="radio" name="mode" value="files" checked> Two files</label>
+        <label><input type="radio" name="mode" value="hash"> A file and a known checksum</label>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="first-path">First file</label>
+      <div class="picker" id="first-picker">
+        <input type="text" id="first-path" placeholder="Choose a file, or drag one here">
+        <button class="secondary">Browse…</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="second-path">Second</label>
+      <div class="stack">
+        <div class="picker" id="second-picker">
+          <input type="text" id="second-path" placeholder="Choose a file, or drag one here">
+          <button class="secondary">Browse…</button>
+        </div>
+        <input type="text" id="expected-hash" class="mono" hidden
+               placeholder="Paste the expected checksum">
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="compare-algorithm">Algorithm</label>
+      <select id="compare-algorithm"></select>
+    </div>
+
+    <button class="primary" id="compare-action">Compare</button>
+    <progress id="compare-progress" max="100" value="0" hidden></progress>
+
+    <p class="verdict" id="verdict" hidden></p>
+
+    <dl class="digests">
+      <dt>First</dt><dd class="mono" id="first-digest"></dd>
+      <dt>Second</dt><dd class="mono" id="second-digest"></dd>
+    </dl>
+  </section>
+
+  <script src="algorithms.js"></script>
+  <script src="bridge.js"></script>
+  <script src="controls.js"></script>
+  <script src="checksum-tab.js"></script>
+  <script src="compare-tab.js"></script>
+</body>
+</html>

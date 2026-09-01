@@ -1,0 +1,36 @@
+{
+  "name": "hash-checker",
+  "version": "1.0.0",
+  "description": "Compute and verify file checksums.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --linux --win"
+  },
+  "devDependencies": {
+    "electron": "^43.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.example.hashchecker",
+    "productName": "Hash Checker",
+    "files": [
+      "app/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility",
+      "desktopName": "hash-checker.desktop",
+      "synopsis": "Compute and verify file checksums"
+    },
+    "win": {
+      "target": [
+        "nsis",
+        "portable"
+      ]
+    }
+  }
+}
