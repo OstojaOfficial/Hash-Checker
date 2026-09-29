@@ -8,7 +8,7 @@
     "dist": "electron-builder --linux --win"
   },
   "devDependencies": {
-    "electron": "^43.4.1",
+    "electron": "^43.5.0",
     "electron-builder": "^26.15.3"
   },
   "build": {
